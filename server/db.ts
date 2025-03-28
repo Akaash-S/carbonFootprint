@@ -2,6 +2,8 @@ import { drizzle } from 'drizzle-orm/neon-serverless';
 import { neon, NeonQueryFunction } from '@neondatabase/serverless';
 import * as schema from '@shared/schema';
 import { migrate } from 'drizzle-orm/neon-serverless/migrator';
+import dotenv from 'dotenv'
+dotenv.config()
 
 // Use environment variables for database configuration
 const DATABASE_URL = process.env.DATABASE_URL || '';

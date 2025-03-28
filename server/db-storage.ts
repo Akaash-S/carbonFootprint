@@ -11,6 +11,8 @@ import { drizzle } from 'drizzle-orm/node-postgres';
 import * as schema from '@shared/schema';
 import connectPg from 'connect-pg-simple';
 import session from 'express-session';
+import dotenv from 'dotenv'
+dotenv.config()
 
 // Create a database pool
 export const pool = new pg.Pool({
